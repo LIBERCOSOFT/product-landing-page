@@ -1,96 +1,135 @@
+body {
+    background: linear-gradient(#041B2D,#0d0d0d);
+    color: #e6e6e6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .topnav {
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#041B2D,#0d0d0d);
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    width: 100%;
 }
 
-h1 {
-    display: inline;
+.topnav img {
+    height: 1em;
 }
 
-h1 img {
-    height: 40px;
+.topnav-links{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 5em;
 }
 
-.topnav a {
-    float: right;
-    display: block;
-    text-align: center;
-    padding: 10px;
+.topnav-links a {
+    padding: .5em;
     text-decoration: none;
+    color: #e6e6e6;
+    text-transform: uppercase;
 }
 
 .container {
     text-align: center;
-    margin: 0px 150px 30px 150px;
+    margin-top: 6em;
 }
 
 #img {
     height: 75px;
     width: 75px;
     float: left;
-    margin-right: 60px;
+    margin-top: 1em;
+    
+}
+
+#description-selector {
+    padding: 1em;
+}
+
+#description {
+    margin-top: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
 }
 
 #description a {
-    display: block;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
     font-family: sans-serif;
 }
 
 #description p {
     text-align: left;
+    padding: 0 0 0 .79em;
+}
+
+#works-selector{
+    padding: 3em;
 }
 
 #price-box {
-    border-color: black;
-    border-style: groove;
-    margin-top: 20px;
-    background: lightgrey;
-}
-
-#price-box .first {
-    float: left;
-    margin-left: 20px;
-}
-
-#price-box .third {
-    float: right;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #price-box p {
-    display: inline-block;
+    border: .2em solid #000000;
+    width: 25%;
+    padding: 1em;
+    margin: .5em;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+#price-box p:hover {
+    overflow: visible;
+    margin-right: 3em;
+    width: 40%;
 }
 
 input[type=button] {
-    font-size: 20px;
-    background: lightgrey;
+    font-weight: bold;
+    font-size: 1em;
     border: none;
     margin: 10px 0px 0px 0px;
+    background: #08395e;
+    padding: .8em;
+    color: #e6e6e6;
 }
 
-.pad-top {
-    font-size: 30px;
-    padding: 0px 1px 0px 0px;
-}
 
 #privacy {
-    margin: 20px 0px 0px 0px;
-    background: lightgray;
+    margin: 3em 0 0 0;
     text-align: end;
-    padding: 10px 5px 10px 0px;
+    padding: 1em;
 }
 
 #privacy a {
-    margin-right: 20px;
-    color: black;
+    color: #e6e6e6;
+    padding-left: 1em;
     text-decoration: none;
 }
 
 .heading {
-    font-size: 25px;
+    font-size: 2em;
+}
+
+.amt {
+    font-size: 1.5em;
 }
 
 .par {
